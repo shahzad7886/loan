@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-[#FAE0C9]  h-screen">
+    <nav class="">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex flex-shrink-0 items-center">
+                        <img class="h-8 w-auto" src="./img/logo/Image.png" alt="Your Company">
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="#" class="rounded-md  px-3 py-2 text-sm font-medium text-red-800"
+                                aria-current="page">How its Work</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-red-800  hover:text-white">Loans</a>
+                            <a href="#"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-red-800  hover:text-white">Pricing</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <button type="button"
+                        class=" rounded  px-7 py-3 mr-5 text-red-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                        Log In
+                    </button>
+                    <button type="button"
+                        class="rounded bg-white px-4 py-3 text-red-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                        Sign UP Free
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                    aria-current="page">How its work</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Loan</a>
+                <a href="#"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Pricing</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="text-gray-600 mt-[7rem] body-font">
+        <div class="container  flex  md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 ml-20 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <p class="text-[18px] text-red-800 uppercase tracking-[2px]">PAYMENT UP TO $50K</p>
+                <h1 class="title-font  text-6xl mb-4 font-medium text-[#D14625]">Easiest place to apply
+                    <br class="hidden lg:inline-block">for your loan
+                </h1>
+                <p class="mb-8 max-w-lg opacity-65 text-[20px] text-[#222] font-[300] ">Need some fast case? Bad credit
+                    history?
+                    Try Diffloan start and feel secure in your future</p>
+
+            </div>
+            <div class="">
+                <img class="object-cover object-center rounded absolute top-0 right-0 w-[600px]" alt="hero"
+                    src="./img/hero-bg.png">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+</body>
+
+</html>
